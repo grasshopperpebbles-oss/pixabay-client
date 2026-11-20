@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import logging
+from pathlib import Path
 
 import httpx
 import pytest
@@ -224,3 +225,9 @@ async def test_async_client(fake: Pixabay, sleeps: list[float]) -> None:
         assert len(fake.api_calls) == 1  # cached
         assert await c.download(res.hits[0]) == b"\x89PNG-bytes"
         assert (await c.get_video(7)).id == 7
+
+
+def test_package_ships_py_typed() -> None:
+    import pixabay_client
+    marker = Path(pixabay_client.__file__).resolve().parent / "py.typed"
+    assert marker.is_file()
