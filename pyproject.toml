@@ -26,9 +26,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://grasshopperpebbles.com"
-Source = "https://github.com/grasshopperpebbles/pixabay-client"
-Issues = "https://github.com/grasshopperpebbles/pixabay-client/issues"
+Homepage = "https://github.com/grasshopperpebbles-oss/pixabay-client"
+Source = "https://github.com/grasshopperpebbles-oss/pixabay-client"
+Issues = "https://github.com/grasshopperpebbles-oss/pixabay-client/issues"
 
 [project.optional-dependencies]
 dev = ["pytest>=8", "pytest-asyncio>=0.24", "mypy>=1.11"]

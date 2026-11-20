@@ -1,5 +1,5 @@
 # Publishes to PyPI when a tag like v0.1.0 is pushed. Uses PyPI Trusted Publishing: no token is stored anywhere.
-# One-time setup on pypi.org: Account -> Publishing -> add a pending publisher: owner grasshopperpebbles,
+# One-time setup on pypi.org: Account -> Publishing -> add a pending publisher: owner grasshopperpebbles-oss,
 # repository pixabay-client, workflow publish.yml, environment pypi.
 name: publish
 on:
